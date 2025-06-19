@@ -1,5 +1,5 @@
 resource "null_resource" "example" {
   provisioner "local-exec" {
-    command = "echo Hellooo, Atlantis!"
+    command = "echo Helloooooooo, Atlantis!"
   }
 }
