@@ -1,9 +1,12 @@
 version: 3
-repos:
-- id: /.*/
+
 projects:
-- name: my-infra
-  dir: .
-  autoplan:
-    when_modified: ["*.tf", "*.tfvars"]
-    enabled: true
+  - name: EIC-Internal-Atlatis-Demo
+    dir: .
+    terraform_version: v1.3.2
+    autoplan:
+      when_modified:
+        - "*.tf"
+        - "*.tfvars"
+        - "*/*.tfvars"
+      enabled: true
