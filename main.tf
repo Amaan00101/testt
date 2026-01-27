@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "null_resource" "example" {
   provisioner "local-exec" {
-    command = "echo Hellooo, Atlantissssssssssss!"
+    command = "echo Hellooo, Atlantisssssss!"
   }
 }
 
@@ -13,6 +13,6 @@ resource "aws_instance" "example" {
   instance_type = "t3.micro"
 
   tags = {
-    Name = "terraform-test-ec2"
+    Name = "terraform-test-ec2-1"
   }
 }
