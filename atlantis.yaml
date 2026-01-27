@@ -1,4 +1,6 @@
 version: 3
+repos:
+- id: /.*/
 projects:
 - name: my-infra
   dir: .
