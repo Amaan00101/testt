@@ -1,8 +1,5 @@
 version: 3
-repos:
-  - id: /.*/
-    allowed_overrides:
-      - delete_source_branch_on_merge
+
 projects:
   - name: EIC-Internal-Atlatis-Demo
     dir: .
