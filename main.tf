@@ -13,6 +13,6 @@ resource "aws_instance" "example" {
   instance_type = "t3.micro"
 
   tags = {
-    Name = "terraform-test-ec2-1"
+    Name = "terraform-test-ec2"
   }
 }
