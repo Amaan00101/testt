@@ -1,13 +1,15 @@
 version: 3
-automerge: true
-delete_source_branch_on_merge: true
-parallel_plan: true
-parallel_apply: false
+repos:
+  - id: /.*/
+    allowed_overrides:
+      - delete_source_branch_on_merge
 projects:
-- name: EIC-Internal-Atlatis-Demo
-  dir: .
-  terraform_version: v1.3.2
-  delete_source_branch_on_merge: true
-  autoplan:
-    when_modified: ["*.tf", "*.tfvars", "*/*.tfvars"]
-    enabled: true
+  - name: EIC-Internal-Atlatis-Demo
+    dir: .
+    terraform_version: v1.3.2
+    autoplan:
+      when_modified:
+        - "*.tf"
+        - "*.tfvars"
+        - "*/*.tfvars"
+      enabled: true
